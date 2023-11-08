@@ -29,4 +29,8 @@ public class UserService {
         newUser.setUpdatedAt(LocalDateTime.now());
         return userRepository.save(newUser);
     }
+
+    public Long count() {
+        return userRepository.count();
+    }
 }
